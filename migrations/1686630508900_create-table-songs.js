@@ -25,14 +25,6 @@ exports.up = (pgm) => {
       type: "INTEGER",
       notNull: false,
     },
-    album_id: {
-      type: "TEXT",
-      notNull: false,
-      reference: {
-        table: "albums",
-        column: "id",
-      },
-    },
     created_at: {
       type: "TEXT",
       notNull: true,
